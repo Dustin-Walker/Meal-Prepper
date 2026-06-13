@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  prompt: MyText
+  raw_response: MyText
+  model_used: MyString
+  status: MyString
+
+two:
+  user: two
+  prompt: MyText
+  raw_response: MyText
+  model_used: MyString
+  status: MyString

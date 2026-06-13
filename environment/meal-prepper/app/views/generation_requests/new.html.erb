@@ -1,0 +1,11 @@
+<% content_for :title, "New generation request" %>
+
+<h1>New generation request</h1>
+
+<%= render "form", generation_request: @generation_request %>
+
+<br>
+
+<div>
+  <%= link_to "Back to generation requests", generation_requests_path %>
+</div>

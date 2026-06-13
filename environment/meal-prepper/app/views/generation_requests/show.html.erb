@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @generation_request %>
+
+<div>
+  <%= link_to "Edit this generation request", edit_generation_request_path(@generation_request) %> |
+  <%= link_to "Back to generation requests", generation_requests_path %>
+
+  <%= button_to "Destroy this generation request", @generation_request, method: :delete %>
+</div>
