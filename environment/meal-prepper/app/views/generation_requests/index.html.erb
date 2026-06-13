@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Generation requests" %>
+
+<h1>Generation requests</h1>
+
+<div id="generation_requests">
+  <% @generation_requests.each do |generation_request| %>
+    <%= render generation_request %>
+    <p>
+      <%= link_to "Show this generation request", generation_request %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New generation request", new_generation_request_path %>

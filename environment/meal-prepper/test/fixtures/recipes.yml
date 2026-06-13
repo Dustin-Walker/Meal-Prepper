@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  generation_request: one
+  title: MyString
+  description: MyText
+  servings: 1
+  prep_time_minutes: 1
+  cook_time_minutes: 1
+  instructions: MyText
+  is_published: false
+
+two:
+  user: two
+  generation_request: two
+  title: MyString
+  description: MyText
+  servings: 1
+  prep_time_minutes: 1
+  cook_time_minutes: 1
+  instructions: MyText
+  is_published: false
