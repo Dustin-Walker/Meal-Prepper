@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Recipe tags" %>
+
+<h1>Recipe tags</h1>
+
+<div id="recipe_tags">
+  <% @recipe_tags.each do |recipe_tag| %>
+    <%= render recipe_tag %>
+    <p>
+      <%= link_to "Show this recipe tag", recipe_tag %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New recipe tag", new_recipe_tag_path %>
