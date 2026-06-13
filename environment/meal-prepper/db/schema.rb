@@ -10,7 +10,46 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_06_12_230805) do
+ActiveRecord::Schema[8.1].define(version: 2026_06_13_033827) do
+  create_table "generation_requests", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "model_used"
+    t.text "prompt"
+    t.text "raw_response"
+    t.string "status"
+    t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_generation_requests_on_user_id"
+  end
+
+  create_table "ingredients", force: :cascade do |t|
+    t.string "category"
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "recipe_ingredients", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "ingredient_id", null: false
+    t.string "notes"
+    t.decimal "quantity"
+    t.integer "recipe_id", null: false
+    t.string "unit"
+    t.datetime "updated_at", null: false
+    t.index ["ingredient_id"], name: "index_recipe_ingredients_on_ingredient_id"
+    t.index ["recipe_id"], name: "index_recipe_ingredients_on_recipe_id"
+  end
+
+  create_table "recipe_tags", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.integer "recipe_id", null: false
+    t.integer "tag_id", null: false
+    t.datetime "updated_at", null: false
+    t.index ["recipe_id"], name: "index_recipe_tags_on_recipe_id"
+    t.index ["tag_id"], name: "index_recipe_tags_on_tag_id"
+  end
+
   create_table "recipes", force: :cascade do |t|
     t.integer "cook_time_minutes"
     t.datetime "created_at", null: false
@@ -27,6 +66,13 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_12_230805) do
     t.index ["user_id"], name: "index_recipes_on_user_id"
   end
 
+  create_table "tags", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.string "slug"
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "display_name"
@@ -35,6 +81,11 @@ ActiveRecord::Schema[8.1].define(version: 2026_06_12_230805) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "generation_requests", "users"
+  add_foreign_key "recipe_ingredients", "ingredients"
+  add_foreign_key "recipe_ingredients", "recipes"
+  add_foreign_key "recipe_tags", "recipes"
+  add_foreign_key "recipe_tags", "tags"
   add_foreign_key "recipes", "generation_requests"
   add_foreign_key "recipes", "users"
 end
