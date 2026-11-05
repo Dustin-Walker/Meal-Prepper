@@ -1,7 +1,7 @@
 version: 2
 updates:
 - package-ecosystem: bundler
-  directory: "/"
+  directory: "/environment/meal-prepper"
   schedule:
     interval: weekly
   open-pull-requests-limit: 10
