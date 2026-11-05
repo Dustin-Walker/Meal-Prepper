@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "locationId": "70100140",
+      "chain": "FRED",
+      "name": "Fred Meyer - Beaverton",
+      "address": { "addressLine1": "11425 SW Beaverton Hillsdale Hwy", "city": "Beaverton", "state": "OR", "zipCode": "97005" }
+    },
+    {
+      "locationId": "70100023",
+      "chain": "FRED",
+      "name": "Fred Meyer - Raleigh Hills",
+      "address": { "addressLine1": "7700 SW Beaverton Hillsdale Hwy", "city": "Portland", "state": "OR", "zipCode": "97225" }
+    },
+    {
+      "locationId": "70500822",
+      "chain": "KROGER",
+      "name": "Kroger Fuel Center",
+      "address": { "addressLine1": "1 Example Way", "city": "Beaverton", "state": "OR", "zipCode": "97005" }
+    }
+  ],
+  "meta": { "pagination": { "start": 0, "limit": 50, "total": 3 } }
+}

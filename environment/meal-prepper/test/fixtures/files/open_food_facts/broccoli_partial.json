@@ -1,0 +1,14 @@
+{
+  "code": "0011110791504",
+  "status": 1,
+  "product": {
+    "code": "0011110791504",
+    "product_name": "Frozen Broccoli Florets",
+    "serving_size": "1 cup (85 g)",
+    "nutriments": {
+      "energy-kcal_serving": "25",
+      "proteins_serving": 2.5,
+      "sodium_100g": 0.02
+    }
+  }
+}

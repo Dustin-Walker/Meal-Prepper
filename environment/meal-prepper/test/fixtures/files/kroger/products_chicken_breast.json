@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "productId": "0001111041700",
+      "upc": "0001111041700",
+      "brand": "Kroger",
+      "description": "Kroger Boneless Skinless Chicken Breast",
+      "items": [ { "itemId": "0001111041700", "price": { "regular": 6.99, "promo": 4.99 }, "size": "1 lb" } ]
+    },
+    {
+      "productId": "0007874201234",
+      "upc": "0007874201234",
+      "brand": "Simple Truth",
+      "description": "Simple Truth Organic Chicken Breast",
+      "items": [ { "itemId": "0007874201234", "price": { "regular": 9.99, "promo": 0 }, "size": "1.25 lb" } ]
+    },
+    {
+      "productId": "0002100000001",
+      "upc": "0002100000001",
+      "brand": "Foster Farms",
+      "description": "Foster Farms Chicken Breast Tenderloins",
+      "items": [ { "itemId": "0002100000001", "price": { "regular": 8.49, "promo": 8.49 }, "size": "1.5 lb" } ]
+    },
+    {
+      "productId": "0002100000002",
+      "upc": "0002100000002",
+      "brand": "Foster Farms",
+      "description": "Foster Farms Chicken Breast Fillets",
+      "items": [ { "itemId": "0002100000002", "size": "2 lb" } ]
+    }
+  ],
+  "meta": { "pagination": { "start": 0, "limit": 50, "total": 4 } }
+}

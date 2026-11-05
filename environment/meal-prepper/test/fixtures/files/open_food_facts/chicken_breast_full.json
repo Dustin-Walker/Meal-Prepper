@@ -1,0 +1,18 @@
+{
+  "code": "0011110417008",
+  "status": 1,
+  "status_verbose": "product found",
+  "product": {
+    "code": "0011110417008",
+    "product_name": "Boneless Skinless Chicken Breast",
+    "serving_size": "112 g",
+    "nutriments": {
+      "energy-kcal_serving": 120,
+      "energy-kcal_100g": 107,
+      "proteins_serving": 26,
+      "proteins_100g": 23.2,
+      "sodium_serving": 0.07,
+      "sodium_100g": 0.0625
+    }
+  }
+}
