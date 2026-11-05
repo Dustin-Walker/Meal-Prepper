@@ -1,0 +1,13 @@
+{
+  "code": "0000000000017",
+  "status": 1,
+  "product": {
+    "code": "0000000000017",
+    "product_name": "Brown Rice",
+    "nutriments": {
+      "energy-kcal_100g": 370,
+      "proteins_100g": 7.9,
+      "sodium_100g": 0.005
+    }
+  }
+}

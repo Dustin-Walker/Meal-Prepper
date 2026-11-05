@@ -1,6 +1,10 @@
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
+require "webmock/minitest"
+
+# No live HTTP from the test suite; every external call must be stubbed.
+WebMock.disable_net_connect!
 
 module ActiveSupport
   class TestCase

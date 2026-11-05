@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "productId": "0001111079150",
+      "upc": "0001111079150",
+      "brand": "Kroger",
+      "description": "Kroger Frozen Broccoli Florets",
+      "items": [ { "itemId": "0001111079150", "price": { "regular": 2.29, "promo": 1.67 }, "size": "12 oz" } ]
+    },
+    {
+      "productId": "0003338365020",
+      "upc": "0003338365020",
+      "brand": "Fresh",
+      "description": "Fresh Broccoli Crowns",
+      "items": [ { "itemId": "0003338365020", "price": { "regular": 1.99 }, "size": "1 lb" } ]
+    }
+  ],
+  "meta": { "pagination": { "start": 0, "limit": 50, "total": 2 } }
+}

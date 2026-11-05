@@ -1,0 +1,61 @@
+# Settings for the Fred Meyer sales brief (bin/rails sales:brief).
+#
+# 1. Find your store:   bin/rails "sales:locations[97005]"
+# 2. Paste its ID into location_id below.
+# 3. Run:               bin/rails sales:brief
+shared:
+  # Kroger locationId of your Fred Meyer store (not a secret).
+  location_id: ""
+
+  # Hard cap on Kroger API calls per run, including the token request.
+  # Kroger allows 10,000 product calls/day; a normal run uses ~1 + watchlist size.
+  call_budget: 200
+
+  # Products API pages to fetch per watchlist term (page_size max is 50).
+  max_pages_per_term: 1
+  page_size: 50
+
+  # Where the dated JSON snapshot and Markdown brief are written (relative to Rails.root).
+  output_dir: storage/sales_briefs
+
+  # Time zone used to date the output files (the app itself runs in UTC).
+  time_zone: "Pacific Time (US & Canada)"
+
+  # Sent to Open Food Facts as the User-Agent. Add contact info here if you want to.
+  off_user_agent: "MealPrepper/0.1 (personal meal-planning tool)"
+
+  # Lunch staples searched at the store. There is no "all sales" endpoint,
+  # so only these terms are checked for sale prices.
+  watchlist:
+    - chicken breast
+    - chicken thighs
+    - ground turkey
+    - salmon
+    - lean ground beef
+    - eggs
+    - egg whites
+    - broccoli
+    - frozen broccoli
+    - frozen stir fry vegetables
+    - frozen green beans
+    - brown rice
+    - jasmine rice
+    - quinoa
+    - Banza pasta
+    - black beans
+    - sweet potatoes
+
+  # Lunch constraints stated in the brief.
+  constraints:
+    servings: 4
+    days: Mon–Thu
+    calories: [500, 700]
+    protein_g: [40, 45]
+    sodium_mg_max: 600
+    notes:
+      - Microwave-reheatable
+      - Whole / minimally processed ingredients
+      - Frozen vegetables for volume
+
+  # Number of lunch ideas to ask Claude for.
+  idea_count: 3
