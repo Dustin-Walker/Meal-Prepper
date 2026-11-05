@@ -59,9 +59,9 @@ group :development do
   gem "web-console"
 
   # Rubocop is the RoR linter
-  gem 'rubocop', require: false
-  gem 'rubocop-rails', require: false  # Rails-specific rules
-  gem 'rubocop-performance', require: false  # Performance checks
+  gem "rubocop", require: false
+  gem "rubocop-rails", require: false  # Rails-specific rules
+  gem "rubocop-performance", require: false  # Performance checks
 end
 
 group :test do
