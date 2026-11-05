@@ -64,7 +64,7 @@ jobs:
           bundler-cache: true
 
       - name: Prepare RuboCop cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         env:
           DEPENDENCIES_HASH: ${{ hashFiles('environment/meal-prepper/.ruby-version', 'environment/meal-prepper/**/.rubocop.yml', 'environment/meal-prepper/**/.rubocop_todo.yml', 'environment/meal-prepper/Gemfile.lock') }}
         with:
